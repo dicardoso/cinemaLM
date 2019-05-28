@@ -1,0 +1,20 @@
+body{
+    background-color: #8a0b07;
+    background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#header{
+    background: #8a0b07;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end; 
+}
+nav ul li{
+    display: flex;
+    color: white;
+    padding: .5%;
+    text-decoration: none;  
+}
