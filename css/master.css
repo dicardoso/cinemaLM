@@ -2,21 +2,45 @@ body{
     background-color: #8a0b07;
     background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-family: Roboto, sans-serif;
 }
 
-#header{
-    background: #8a0b07;
+/*menu*/
+header{
+    text-align: center;
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+nav ul:first-child{
+    padding-top: 1rem;
 }
 
 nav ul{
-    display: flex;
-    justify-content: flex-end; 
+    padding-top: .2rem;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: .3rem;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+    margin:0;
 }
+
 nav ul li{
     display: flex;
+    justify-content: center;
+    background: #8a0b07;
+    width: 100vw;
     color: white;
-    padding: .5%;
-    text-decoration: none;  
+    padding: .2rem 0  
 }
 
 nav a{
@@ -26,4 +50,32 @@ nav a{
 
 nav a:visited{
     color: white;
+}
+
+/*Filmes*/
+h1{
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin: 0;
+}
+.filmes{
+    height: 15rem;
+    width: 100vw;
+    background-color: black;
+}
+
+.filmes .banner{  
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.filmes .banner img{
+    padding: 0 1rem;
+}
+
+.filmes .banner li{
+    list-style-type: none; 
+    color:white;
 }
