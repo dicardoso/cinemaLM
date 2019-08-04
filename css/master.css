@@ -125,6 +125,7 @@ h1{
 .estrutura p, .servicos p{
     margin-left: 2em;
     padding-bottom: 2em;
+    width: 100%;
 }
 
 .estrutura div img{
