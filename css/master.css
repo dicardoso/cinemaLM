@@ -123,13 +123,13 @@ h1{
 }
 
 .estrutura p, .servicos p{
-    text-align: justify;
     margin-left: 2em;
     padding-bottom: 2em;
 }
 
 .estrutura div img{
     width: 200px;
+    align-items: center;
 }
 
 /*SERVIÇOS*/
