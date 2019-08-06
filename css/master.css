@@ -123,19 +123,28 @@ h1{
 }
 
 .estrutura p, .servicos p{
-    margin-left: 2em;
+    margin: 15px auto;
     padding-bottom: 2em;
-    width: 100%;
+    width: 75%;
+    text-align: justify;
 }
 
 .estrutura div img{
+    margin: auto;
+    display: flex;
     width: 200px;
-    align-items: center;
+    justify-content: center;
 }
 
 /*SERVIÇOS*/
 
 .servicos{
     background-color: #333;
+    padding: 2em 0;
+}
+
+/*CONTATO*/
+.contato{
+    display: flex;
     padding: 2em 0;
 }
