@@ -174,9 +174,30 @@ footer{
 }
 
 .contato .social i{
-    padding: 0 0.25em;
+    margin: 0 0.25em;
+    padding: 0 0.05em;
+    border-radius: 10%;
 }
 
 .contato  .formulario h2{
     margin: 0;
+}
+
+.contato .social a{
+
+}
+.contato .social .fa-facebook-square{
+    background-color: rgb(111, 8, 228);
+    color:white;
+    
+}
+.contato .social .fa-instagram{
+    background-color: rgb(255, 209, 5);
+    color:black;
+    
+}
+.contato .social .fa-twitter-square{
+    background-color: rgb(8, 195, 228);
+    color:white;
+    
 }
