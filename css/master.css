@@ -167,6 +167,16 @@ footer{
     
 }
 
+.contato .social{
+    margin: 0.8em auto;
+    text-align: center;
+    font-size: 60px;
+}
+
+.contato .social i{
+    padding: 0 0.25em;
+}
+
 .contato  .formulario h2{
     margin: 0;
 }
