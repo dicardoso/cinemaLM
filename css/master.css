@@ -152,11 +152,21 @@ footer{
 
 .contato{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin:auto;
 }
 
 .contato .mapa{
-    width: 100px;
-    height: 100px;
+    margin: auto;
+    width: 250px;
+    height: 160px;
     background-color: green;
+}
+
+.contato  .formulario{
+    
+}
+
+.contato  .formulario h2{
+    margin: 0;
 }
