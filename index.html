@@ -18,7 +18,7 @@
                 <li><a href="#lista-filmes">Filmes</a></li>
                 <li><a href="#salas">Estrutura</a></li>
                 <li><a href="#lista-servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#contato">Sobre nós</a></li>
             </ul>
         </nav>
     </header>
@@ -58,21 +58,45 @@
     </article>
 
     <footer>
-        <h1>SOBRE NÓS</h1>
+        <h1 id="contato">SOBRE NÓS</h1>
         <div class="contato">
             
             <div class="mapa">
                 
             </div>
             <div class="social">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter-square"></i>
+                <a href="#contato"><i class="fab fa-facebook-square"></i></a>
+                <a href="#contato"><i class="fab fa-instagram"></i></a>
+                <a href="#contato"><i class="fab fa-twitter-square"></i></a>
             </div>
             <div class="formulario">
                 <h2>Fale conosco</h2>
                 <form action="">
-                    
+                    <div class="nome">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>*
+                    </div>
+                    <div class="opcao">
+                        <label for="place">Assunto </label>
+                        <select name="place" id="place">
+                            <option value=""></option>
+                            <option value="PB">Dúvida</option>
+                            <option value="PB">Reclamação</option>
+                            <option value="PE">Evento</option>
+                            <option value="PB">Outros</option>
+                        </select>
+                    </div>
+                    <div class="mensagem">
+                        <label for="message">Mensagem:</label><br>
+                        <textarea name="message" id="message" rows="3" cols="60">digite uma mensagem</textarea>
+                    </div>
+                    <div class="botao">
+                        <input class="btn" type="button" value="Enviar">
+                    </div>
                 </form>
     
             </div>
