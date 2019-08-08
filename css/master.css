@@ -47,6 +47,8 @@ nav ul li{
     width: 100%;
     color: white;
     padding: .3rem 0  
+
+    
 }
 
 nav a{
@@ -91,7 +93,12 @@ h1{
 .filmes .banner img{
     justify-content: center;
     width: 8rem;
+
+    -webkit-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
+    -moz-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
+    box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
 }
+
 
 .filmes .banner ul{
     justify-content: center;
@@ -110,6 +117,20 @@ h1{
     background-color: #750905;
 }
 
+@media all and (min-width: 500px){
+    .filmes .banner{ 
+        grid-column-gap: 25px;
+    }
+
+    .filmes .banner li{
+        transition: transform 1s;
+    will-change: scale;
+    }
+
+    .filmes .banner li:hover{
+        transform: scale(1.1);
+    }
+}
 
 /*Estrutura*/
 .estrutura{
@@ -135,6 +156,10 @@ h1{
     display: flex;
     width: 200px;
     justify-content: center;
+
+    -webkit-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
+    -moz-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
+    box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
 }
 
 /*SERVIÇOS*/
@@ -142,6 +167,37 @@ h1{
 .servicos{
     background-color: #333;
     padding: 2em 0;
+}
+
+.servicos i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    font-size: 80px;
+    color: #750905;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
+    -moz-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
+    box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
+}
+
+@keyframes bg{
+    50%{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.servicos i:hover{
+    animation: bg 1s ease-in-out;
 }
 
 /*CONTATO*/
