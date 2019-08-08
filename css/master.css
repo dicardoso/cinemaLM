@@ -11,6 +11,7 @@ body{
 
 p{
     color:white;
+    font-size: 18px;
 }
 
 /*menu*/
@@ -143,7 +144,7 @@ h1{
 }
 
 .estrutura p, .servicos p{
-    margin: 15px auto;
+    margin: 30px auto;
     padding-bottom: 2em;
     width: 75%;
     text-align: justify;
