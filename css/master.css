@@ -21,7 +21,7 @@ header{
 header .logo{
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 800;
     text-decoration: none;
     color: antiquewhite;
@@ -34,7 +34,7 @@ nav ul:first-child{
 nav ul{
     padding-top: .2rem;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 30px;
     padding: 0;
     margin:0;
 }
@@ -46,9 +46,7 @@ nav ul li{
     background: #8a0b07;
     width: 100%;
     color: white;
-    padding: .3rem 0  
-
-    
+    padding: .3rem 0      
 }
 
 nav a{
@@ -69,7 +67,7 @@ h1{
     color: white;
     text-align: center;
     margin: 0;
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 30px;
 }
 .filmes{
@@ -108,7 +106,7 @@ h1{
 .filmes .banner li{
     list-style-type: none; 
     color:white;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #8a0b07;
     padding: .5em;
 }
@@ -154,7 +152,7 @@ h1{
 .estrutura div img{
     margin: auto;
     display: flex;
-    width: 200px;
+    width: 300px;
     justify-content: center;
 
     -webkit-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
