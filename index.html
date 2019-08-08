@@ -17,10 +17,10 @@
         <a class="logo" href="#">Cine LM</a>
         <nav>
             <ul>
-                <li><a href="#lista-filmes">Filmes</a></li>
-                <li><a href="#salas">Estrutura</a></li>
-                <li><a href="#lista-servicos">Serviços</a></li>
-                <li><a href="#contato">Sobre nós</a></li>
+                <li><a id="um" href="#lista-filmes">Filmes</a></li>
+                <li><a id="dois" href="#salas">Estrutura</a></li>
+                <li><a id="tres" href="#lista-servicos">Serviços</a></li>
+                <li><a id="quatro" href="#contato">Sobre nós</a></li>
             </ul>
         </nav>
     </header>
@@ -29,10 +29,10 @@
         <div class="filmes">
             <h1 id="lista-filmes">EM CARTAZ</h1>
             <ul class="banner">
-                <a href="#lista-filmes"><li> <img src="img/vingadores.jpg"><br>Ultimato</li></a>
-                <a href="./pages/alladin.html"><li><img src="img/aladdin.jpg"><br>Aladdin</li></a>
-                <a href="#lista-filmes"><li><img src="img/john.jpg"><br>John Wick 3</li></a>
-                <a href="#lista-filmes"><li><img src="img/fenix.jpg"><br>Fênix Negra</li></a>
+                <a id="a" href="#lista-filmes"><li> <img src="img/vingadores.jpg"><br>Ultimato</li></a>
+                <a id="b" href="./pages/alladin.html"><li><img src="img/aladdin.jpg"><br>Aladdin</li></a>
+                <a id="c" href="#lista-filmes"><li><img src="img/john.jpg"><br>John Wick 3</li></a>
+                <a id="d" href="#lista-filmes"><li><img src="img/fenix.jpg"><br>Fênix Negra</li></a>
             </ul>
         </div>
 
@@ -83,15 +83,15 @@
                 <h2>Fale conosco</h2>
                 <form action="">
                     <div class="nome">
-                        <label for="nome">Nome</label>
+                        <label for="nome">Nome *</label>
                         <input type="text" id="nome">
                     </div>
                     <div class="email">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>*
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" required>
                     </div>
                     <div class="opcao">
-                        <label for="place">Assunto </label>
+                        <label for="place">Assunto</label>
                         <select name="place" id="place">
                             <option value="">-Escolha uma opção-</option>
                             <option value="duvida">Dúvida</option>
@@ -101,8 +101,8 @@
                         </select>
                     </div>
                     <div class="mensagem">
-                        <label for="message">Mensagem:</label><br>
-                        <textarea name="message" id="message" rows="5" cols="40" placeholder="Digite a sua mensagem" required></textarea>*
+                        <label for="message">Mensagem *</label><br>
+                        <textarea name="message" id="message" rows="5" cols="30" placeholder="Digite a sua mensagem" required></textarea>
                     </div>
                     <div class="botao">
                         <input class="btn" type="button" value="Enviar">

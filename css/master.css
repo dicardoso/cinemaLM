@@ -24,8 +24,21 @@ header .logo{
     justify-content: center;
     font-size: 60px;
     font-weight: 800;
+    padding: 20px;
     text-decoration: none;
     color: antiquewhite;
+    animation: loading-logo 2s ease-in-out;
+}
+
+@keyframes loading-logo{
+    from,20%{
+      opacity: 0;
+      transform: scale(.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
 }
 
 nav ul:first-child{
@@ -38,8 +51,19 @@ nav ul{
     font-size: 30px;
     padding: 0;
     margin:0;
+    
 }
 
+@keyframes loading-menu{
+    from,30%{
+        transform: translateX(-100px);
+        opacity: 0
+    }
+    80% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 nav ul li{
     display: flex;
     justify-content: center;
@@ -47,12 +71,26 @@ nav ul li{
     background: #8a0b07;
     width: 100%;
     color: white;
-    padding: .3rem 0      
+    padding: .3rem 0;
 }
 
 nav a{
     text-decoration: none;
     color:white;
+      
+}
+
+#um{
+    animation: loading-menu 3s ease-in-out; 
+}
+#dois{
+    animation: loading-menu 3.5s ease-in-out; 
+}
+#tres{
+    animation: loading-menu 4s ease-in-out; 
+}
+#quatro{
+    animation: loading-menu 4.5s ease-in-out; 
 }
 
 nav ul li:hover{
@@ -78,6 +116,15 @@ h1{
     padding-bottom: 50px;
 }
 
+@keyframes filme-anim{
+    from,50%{
+        opacity: 0;
+    }
+    to{
+
+    }
+}
+
 .filmes .banner{  
     width: 100%;
     display: grid;
@@ -89,6 +136,18 @@ h1{
     grid-column-gap: 10px;
 }
 
+#a{
+    animation: filme-anim 4s ease-in-out;
+}
+#b{
+    animation: filme-anim 4.5s ease-in-out;
+}
+#c{
+    animation: filme-anim 5.5s ease-in-out;
+}
+#d{
+    animation: filme-anim 6s ease-in-out;
+}
 .filmes .banner img{
     justify-content: center;
     width: 8rem;
@@ -187,12 +246,15 @@ h1{
 }
 
 @keyframes bg{
-    50%{
-        transform: scale(1.1);
-    }
-    to{
+    from{
         transform: scale(1);
-    }
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      to{
+        transform: scale(1);
+      }
 }
 
 .servicos i:hover{
@@ -216,10 +278,6 @@ footer{
     width: 250px;
     height: 160px;
     background-color: green;
-}
-
-.contato  .formulario{
-    
 }
 
 .contato .social{
@@ -250,6 +308,49 @@ footer{
 }
 .contato .social .fa-twitter-square{
     background-color: rgb(8, 195, 228);
-    color:white;
+    color:white;   
+}
+
+.contato .social .fab:hover{
+    transform: scale(1.2);
+}
+
+.contato  .formulario{
+    margin: auto;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.329);
+    padding:2em;
+}
+
+.contato .formulario h2{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 35px;
+}
+
+.contato .formulario div label{
+    padding: 0 5px;
+    font-size: 20px;
     
+}
+
+.contato .formulario input, select, textarea{
+    display: flex;
+    padding: 5px;
+    font-size: 20px;
+    margin-top:5px;
+    margin-bottom: 15px;
+    font-weight: bold;  
+    background-color: #e2e2e2;
+    border:0;
+}
+
+.contato .formulario .email input{
+    width: 350px;
+    flex-direction: row;
+}
+
+.contato .formulario .botao{
+    display: flex;
+    justify-content: center;
 }
