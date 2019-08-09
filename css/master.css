@@ -60,13 +60,6 @@ nav ul{
     margin:0;  
 }
 
-@media all and (min-width: 600px){
-    nav ul{
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
 @keyframes loading-menu{
     from,30%{
         transform: translateX(-100px);
@@ -148,29 +141,6 @@ h1{
     padding-inline-start: 0px;
     grid-row-gap: 20px;
     grid-column-gap: 10px;
-}
-
-@media all and (min-width: 700px){
-    .filmes .banner{  
-        display: flex;
-        justify-content: space-around;
-        padding: 0 1rem;
-        width: 97%;
-    }
-
-    .filmes .banner li{
-        padding: .3em;
-    }
-
-    .filmes .banner img{
-        width: 7em;
-    }
-}
-
-@media all and (min-width: 1000px){
-    .filmes .banener img{
-        width: 10em;
-    }
 }
 
 .filmes h1{
@@ -383,4 +353,49 @@ footer{
 .contato .formulario .botao{
     display: flex;
     justify-content: center;
+}
+
+
+
+@media all and (min-width: 600px){
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media all and (min-width: 800px){
+    header .logo{
+        display: flex;
+        float: left;
+    }
+    header nav{
+        height: 7em;
+    }
+    nav ul{
+        display: flex;
+        align-items: flex-end
+        justify-content: space-between;
+    }
+
+    .filmes .banner{  
+        display: flex;
+        justify-content: space-around;
+        padding: 0 1rem;
+        width: 97%;
+    }
+
+    .filmes .banner li{
+        padding: .3em;
+    }
+
+    .filmes .banner img{
+        width: 7em;
+    }
+}
+
+@media all and (min-width: 1000px){
+    .filmes .banener img{
+        width: 10em;
+    }
 }
