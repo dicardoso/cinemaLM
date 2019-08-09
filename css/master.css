@@ -140,6 +140,10 @@ h1{
     grid-column-gap: 10px;
 }
 
+.filmes h1{
+    animation: filme-anim 3.5s ease-in-out;
+}
+
 #a{
     animation: filme-anim 4s ease-in-out;
 }
