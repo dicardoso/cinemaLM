@@ -1,0 +1,89 @@
+@import url('master.css');
+
+
+header .logo{
+   animation: 0s;
+}
+
+#um, #dois, #tres, #quatro{
+   animation: 0s;
+}
+
+.data{
+   display: flex;
+}
+
+article .filmes .data .filme img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 20rem;
+   margin-left: 2em;
+}
+
+article .filmes .data .filme .classifica{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top:5px; 
+}
+
+article .filmes .data .filme .classifica p{
+   text-align: center;
+   font-size: 20px;
+   margin:0;
+}
+
+article .filmes .data .filme .classifica .cubo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 18px;
+   background-color: rgb(0, 68, 255);
+   border-radius: 10%;
+   width: 30px;
+   height: 30px;
+   margin-left: 10px;
+   font-weight: bold;
+}
+
+article .filmes .sinopse h2{
+   text-align: center;
+   font-weight: bold;
+}
+
+article .filmes .sinopse p{
+   padding: 2em 3em;
+   text-align: justify
+}
+
+article .filmes .sinopse .botao{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+
+article .filmes .sinopse .botao a{
+   color: white;
+   text-decoration: none;
+   font-size: 30px;
+   background-image: linear-gradient(45deg, rgb(189, 90, 33), rgb(177, 30, 30));
+   border-radius: 15px;
+   padding: 10px 15px;
+   transition: transform 1s;
+   will-change: transform;
+}
+
+article .filmes .sinopse .botao a:hover{
+   transform: scale(1.1);
+}
+
+article .filmes .trailer{
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   justify-content: center;
+   align-items: center;
+}
