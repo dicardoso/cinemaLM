@@ -5,7 +5,7 @@ header .logo{
    animation: 0s;
 }
 
-#um, #dois, #tres, #quatro{
+body, #um, #dois, #tres, #quatro, nav ul li, .filmes h1{
    animation: 0s;
 }
 

@@ -7,6 +7,13 @@ body{
     height: 100%;
     margin:0;
     color:white;
+    animation: body-in 1s ease-in-out;
+}
+
+@keyframes body-in{
+    from{
+        background-color: black;
+    }
 }
 
 a:link, a:active, a:visited{
@@ -26,11 +33,7 @@ header{
 header .logo{
     display: flex;
     justify-content: center;
-    font-size: 60px;
-    font-weight: 800;
-    padding: 20px;
     text-decoration: none;
-    color: antiquewhite;
     animation: loading-logo 2s ease-in-out;
 }
 
@@ -57,6 +60,13 @@ nav ul{
     margin:0;  
 }
 
+@media all and (min-width: 600px){
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 @keyframes loading-menu{
     from,30%{
         transform: translateX(-100px);
@@ -75,12 +85,12 @@ nav ul li{
     width: 100%;
     color: white;
     padding: .3rem 0;
+    animation: body-in 2s ease-in-out;
 }
 
 nav a{
     text-decoration: none;
-    color:white;
-      
+    color:white;   
 }
 
 #um{
@@ -140,6 +150,29 @@ h1{
     grid-column-gap: 10px;
 }
 
+@media all and (min-width: 700px){
+    .filmes .banner{  
+        display: flex;
+        justify-content: space-around;
+        padding: 0 1rem;
+        width: 97%;
+    }
+
+    .filmes .banner li{
+        padding: .3em;
+    }
+
+    .filmes .banner img{
+        width: 7em;
+    }
+}
+
+@media all and (min-width: 1000px){
+    .filmes .banener img{
+        width: 10em;
+    }
+}
+
 .filmes h1{
     animation: filme-anim 3.5s ease-in-out;
 }
@@ -158,7 +191,7 @@ h1{
 }
 .filmes .banner img{
     justify-content: center;
-    width: 8rem;
+    
 
     -webkit-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
     -moz-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
