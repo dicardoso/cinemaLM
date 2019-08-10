@@ -10,7 +10,7 @@ body{
 
 @keyframes body-in{
     from{
-        background-color: black;
+        background-color: rgb(0, 0, 0);
     }
 }
 
@@ -28,11 +28,32 @@ header{
     text-align: center;
 }
 
+.slide {
+    background: center/cover url(../img/slide1.png);
+    height: 100vh;  
+}
 header .logo{
     display: flex;
     justify-content: center;
     text-decoration: none;
     animation: loading-logo 2s ease-in-out;
+    align-items: center;
+}
+
+.logo h1{
+    font-family: 'Limelight', cursive;
+    align-items: center;
+    display: flex;
+    margin: 0;
+}
+
+.slide .container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes loading-logo{
@@ -104,7 +125,25 @@ nav ul li:hover{
 nav a:visited{
     color: white;
 }
+.bg{
+    background-image: url(../img/bg2.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
 
+.bg h3{
+    font-family: 'Flamenco';
+    font-size: 40px;
+    float: right;
+    align-items: center;
+    text-align: right;
+    padding: 30px;
+    text-shadow: 3px 4px 3px #2c2c2c;
+
+    background-color: #eeeeee60;
+}
 /*Filmes*/
 h1{
     color: white;
@@ -182,21 +221,6 @@ h1{
 
 .filmes .banner li:hover{
     background-color: #750905;
-}
-
-@media all and (min-width: 500px){
-    .filmes .banner{ 
-        grid-column-gap: 25px;
-    }
-
-    .filmes .banner li{
-        transition: transform 1s;
-    will-change: scale;
-    }
-
-    .filmes .banner li:hover{
-        transform: scale(1.1);
-    }
 }
 
 /*Estrutura*/
@@ -278,13 +302,13 @@ footer{
 
 }
 
-.contato .social{
+.contato .mapa .social{
     margin: 0.8em auto;
     text-align: center;
     font-size: 60px;
 }
 
-.contato .social i{
+.contato .mapa .social i{
     margin: 0 0.25em;
     padding: 0 0.05em;
     border-radius: 10%;
@@ -294,23 +318,28 @@ footer{
     margin: 0;
 }
 
-.contato .social .fa-facebook-square{
+.contato .mapa .social .fa-facebook-square{
     background-color: rgb(111, 8, 228);
     color:white;
     
 }
-.contato .social .fa-instagram{
+.contato .mapa .social .fa-instagram{
     background-color: rgb(255, 209, 5);
     color:black;
     
 }
-.contato .social .fa-twitter-square{
+.contato .mapa .social .fa-twitter-square{
     background-color: rgb(8, 195, 228);
     color:white;   
 }
 
-.contato .social .fab:hover{
+.contato .mapa .social .fab{
+    transition: transform 0.7s;
+    will-change: transform;
+}
+.contato .mapa .social .fab:hover{
     transform: scale(1.2);
+    box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
 }
 
 .contato  .formulario{
@@ -351,14 +380,75 @@ footer{
 .contato .formulario .botao{
     display: flex;
     justify-content: center;
+    
 }
 
+.contato .formulario .botao .btn{
+    transition: transform 0.7s;
+    will-change: transform;
+}
 
+.contato .formulario .botao .btn:hover{
+    transform: scale(1.1);
+    box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
+}
+
+.rodape{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    text-align: center;
+}
+
+.estrutura h1, .servicos h1, footer h1{
+    animation: estrutura-img 5s;
+}
+
+@keyframes estrutura-img {
+    from,80%{
+        opacity: 0;
+    }
+    
+}
+.servicos ,.estrutura, .contato{
+    animation: estrutura-img 5s;
+}
+
+@media all and (min-width: 500px){
+    
+    .filmes .banner{ 
+        grid-column-gap: 25px;
+    }
+
+    .filmes .banner li{
+        transition: transform 1s;
+        will-change: scale;
+    }
+
+    .filmes .banner li:hover{
+        transform: scale(1.1);
+    }
+}
 
 @media all and (min-width: 600px){
     nav ul{
         display: flex;
         justify-content: space-between;
+    }
+
+    .slide .container {
+        align-items: flex-end;
+    }
+    .slide .container h3{
+        width: 30rem;
+    }
+
+    .contato .formulario{
+        width: 25em;
+    }
+
+    .contato .formulario textarea{
+        width: 98%;
     }
 }
 
@@ -367,20 +457,34 @@ footer{
         display: flex;
         float: left;
     }
-
-    header .logo img{
-        width: 12rem;
-    }
     header nav{
-        height: 7em;
+        padding: 10px 0;
+        justify-content: flex-end;
+        align-items: center
     }
     nav ul{
         display: flex;
-        align-items: flex-end;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: flex-end;
         font-size: 20px;
+        margin-left: 200px;
     }
 
+    nav ul:first-child {
+        padding-top: 0;
+    }
+
+    nav ul li{
+        text-align: center;
+        align-items: center;
+        width: 16rem;
+        justify-content: space-around;
+    }
+
+    .slide .container h3{
+        font-size: 40px;
+        width: 30rem;
+    }
     .filmes .banner{  
         display: flex;
         justify-content: space-around;
@@ -395,10 +499,91 @@ footer{
     .filmes .banner img{
         width: 7em;
     }
+
+    .servicos .conteudo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: .5r 1fr;
+    }
+
+    .servicos .conteudo i{
+        grid-row:1/2;
+        margin:30px auto;
+    }
+    
+    .servicos .conteudo p{
+        grid: 2/3;
+        margin:0 auto;
+        display: flex;
+    }
+
+    .contato .mapa iframe{
+        height: 15em;
+        width: 25em;
+    }
 }
 
 @media all and (min-width: 1000px){
+    .slide .container h3{
+        font-size: 50px;
+        width: 35rem;
+    }
     .filmes .banner img{
         width: 10em;
+    }
+
+    .estrutura .info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: .5r 1fr;
+    }
+
+    .contato{
+        display: flex;
+        flex-direction: row;
+        padding: 0 15px;
+    }
+
+    .contato .mapa .social{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contato .mapa .social i{
+        margin: .4em 0em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato .mapa{
+        margin-top:0;
+    }
+
+    .contato .mapa iframe{
+        height: 20em;
+        width: 30em;
+    }
+
+    .contato .formulario{
+        width: 25em;
+    }
+
+    .contato .formulario .email input{
+        width: 390px;
+    }
+
+    .contato .formulario textarea{
+        width: 98%;
+    }
+}
+
+@media all and (min-width: 1100px){
+    .contato .mapa iframe{
+        height: 25em;
+        width: 35em;
+    }
+
+    .contato .formulario{
+        margin-top: 0;
     }
 }

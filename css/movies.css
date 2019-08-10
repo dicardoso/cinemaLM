@@ -87,3 +87,51 @@ article .filmes .trailer{
    justify-content: center;
    align-items: center;
 }
+
+@media all and (min-width: 450px){
+   article .filmes .data{
+      flex-direction: column;
+   }
+   article .filmes .data .filme img{
+      width: 15rem;
+      margin: auto; 
+   }
+   article .filmes .trailer iframe{
+      width: 400px;
+      margin:auto;
+   }
+}
+
+@media all and (min-width: 600px){
+   article .filmes .data .filme img{
+      width: 20rem;
+   }
+   article .filmes .trailer iframe{
+      width: 500px;
+   }
+}
+
+@media all and (min-width: 800px){
+   article .filmes .data{
+      flex-direction: row;
+      padding: 10px 30px;
+   }
+   article .filmes .trailer iframe{
+      width: 600px;
+      margin:auto;
+   }
+}
+
+@media all and (min-width: 1000px){
+   article .filmes .trailer iframe{
+      width: 900px;
+      height: 500px;
+      margin:auto;
+   }
+}
+@media all and (min-width: 1000px){
+   article .filmes .data{
+      flex-direction: row;
+      padding: 10px 60px;
+   }
+}
