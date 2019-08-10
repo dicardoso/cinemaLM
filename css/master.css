@@ -1,13 +1,11 @@
 body{
     background-color: #8a0b07;
-    background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     font-family: Roboto, sans-serif;
     width: 100%;
     height: 100%;
     margin:0;
     color:white;
-    animation: body-in 1s ease-in-out;
+    animation: body-in 2s ease-in-out;
 }
 
 @keyframes body-in{
@@ -319,7 +317,7 @@ footer{
     margin: auto;
     justify-content: center;
     background-color:rgba(0, 0, 0, 0.329);
-    padding:2em;
+    padding: 1.5em;
 }
 
 .contato .formulario h2{
@@ -346,7 +344,7 @@ footer{
 }
 
 .contato .formulario .email input{
-    width: 350px;
+    width: 316px;
     flex-direction: row;
 }
 
@@ -369,13 +367,18 @@ footer{
         display: flex;
         float: left;
     }
+
+    header .logo img{
+        width: 12rem;
+    }
     header nav{
         height: 7em;
     }
     nav ul{
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;
+        justify-content: space-around;
+        font-size: 20px;
     }
 
     .filmes .banner{  
