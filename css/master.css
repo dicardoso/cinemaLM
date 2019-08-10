@@ -161,7 +161,7 @@ h1{
 }
 .filmes .banner img{
     justify-content: center;
-    
+    width: 7rem;    
 
     -webkit-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
     -moz-box-shadow: 12px 12px 12px -5px rgba(0,0,0,0.62);
@@ -374,7 +374,7 @@ footer{
     }
     nav ul{
         display: flex;
-        align-items: flex-end
+        align-items: flex-end;
         justify-content: space-between;
     }
 
@@ -395,7 +395,7 @@ footer{
 }
 
 @media all and (min-width: 1000px){
-    .filmes .banener img{
+    .filmes .banner img{
         width: 10em;
     }
 }
